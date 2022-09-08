@@ -1,0 +1,32 @@
+<header class="w-full sticky top-0 bg-white flex p-6 py-4 justify-between items-center z-50">
+    <div class="logo">
+        <img src="../../../../assets/images/logo.PNG" class=" w-40" alt="">
+    </div>
+
+    <div class="nav-contents text-fbn-text font-semibold text-md flex justify-between items-center">
+        <div class="flex mx-6">
+            <div class="flex items-center">
+                <svg width="6" height="14" viewBox="0 0 6 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.74023 0.265625V18.5H0.000610352V0.265625H5.74023ZM2.13342 15.914H3.53967V13.8846H2.13342V15.914ZM2.13342 12.2363H3.53967V10.207H2.13342V12.2363ZM2.13342 8.55865H3.53967V6.5293H2.13342V8.55865ZM2.13342 4.88098H3.53967V2.85162H2.13342V4.88098Z" fill="#002855"/>
+                    </svg>
+                    
+                <fa-icon [icon]="building" class="text-fbn-blue"></fa-icon>
+            </div>
+            <p class="mx-2">Chevron ltd</p>
+            <fa-icon [icon]="more" class="text-fbn-blue"></fa-icon>
+        </div>
+        <div class="flex items-center justify-center">
+            <fa-icon [icon]="notification" class="text-ffbn-gold-light text-2xl"></fa-icon>
+            <p class="mx-2">Jam Wando</p>
+            <fa-icon [icon]="more" class="text-fbn-blue"></fa-icon>
+        </div>
+    </div>
+</header>
+<div class="flex">
+    <div class="bg-fbn-blue fixed h-full w-[18%]">
+        <app-side-nav></app-side-nav>
+    </div>
+    <div class="w-[82%] relative left-[18%]   p-8 bg-fbn-gray-bg">
+        <router-outlet></router-outlet>
+    </div>
+</div>

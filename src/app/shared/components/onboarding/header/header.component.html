@@ -1,0 +1,17 @@
+<div class="flex-between">
+    <div class="text">
+        <h1 class="headerTitle">{{_headerTitle}}</h1>
+    </div>
+    <div class="buttons flex-between">
+        <div class="headerBtn flex-between">
+            <fa-icon [icon]="addIcon" class="mx-2"></fa-icon>
+            <!-- <app-buttons (clicker)='addBuyer()' btnText={{btnText1}}></app-buttons> -->
+            <button class="" (click)="onClick()">{{_btnText1}}</button>
+        </div>
+        <div class="headerBtn flex-between">
+            <fa-icon [icon]="addIcon" class="mx-2"></fa-icon>
+            <!-- <app-buttons (clicker)='addSeller()' btnText={{btnText2}}></app-buttons> -->
+            <button class="" (click)="onClick2()">{{_btnText2}}</button>
+        </div>
+    </div>
+</div>

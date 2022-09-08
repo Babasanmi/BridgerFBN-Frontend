@@ -1,0 +1,40 @@
+@import '../../../../../customStyles/colors';
+
+.card{
+    background-color: white;
+    width:15rem;
+    padding: 13px 10px;
+}
+
+.icon{
+    width: fit-content;
+    background-color: $fbn-gray-bg;
+    padding: 13px;
+    border-radius: 10rem;
+    margin: 10px 0;
+}
+.cardTitle{
+    font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+color: $fbn-text;
+}
+
+.figure{
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: $fbn-blue;
+}
+.btn{
+    font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 16px;
+width: fit-content;
+color:$fbn-blue;
+border: 1px solid $fbn-blue;
+padding: 2px 4px;
+}

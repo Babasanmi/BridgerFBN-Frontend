@@ -5,6 +5,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { PagesComponent } from './pages/pages.component';
 import {FormPageComponent} from './form-page/form-page.component';
 import { EditFormPageComponent } from './edit-form-page/edit-form-page.component';
+import { ConfirmDetailsComponent } from './confirm-details/confirm-details.component';
 const routes: Routes = [
     {
         path: '', component: LayoutComponent , children: [
@@ -15,7 +16,8 @@ const routes: Routes = [
         ],
     },
     {path:'add-new/:role', component: FormPageComponent},
-    {path: 'edit-form', component: EditFormPageComponent}
+    {path: 'edit-form', component: EditFormPageComponent},
+    {path: 'confirm-details', component: ConfirmDetailsComponent}
 
 ]
 

@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfirmDetailsComponent implements OnInit {
 
+  isSuccessModalOpen: Boolean = false;
+
+  toggleSuccessModal(){
+    this.isSuccessModalOpen = !this.isSuccessModalOpen;
+  }
   constructor() { }
 
   ngOnInit(): void {

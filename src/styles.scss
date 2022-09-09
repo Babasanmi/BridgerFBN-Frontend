@@ -93,6 +93,15 @@ body{
     font-size: 16px;
     line-height: 19px;
 }
+.fbn-px-fill-blue-btn {
+    border-radius: 100px;
+    padding: 8px 2rem;
+    background-color: $fbn-blue ;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
 .fbn-fill-green-btn {
     border-radius: 100px;
     padding: 8px 15px;
@@ -114,6 +123,15 @@ body{
 .fbn-blue-btn {
     border-radius: 100px;
     padding: 8px 15px;
+   border: 1px solid $fbn-blue;
+    color: $fbn-blue;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.fbn-px-blue-btn {
+    border-radius: 100px;
+    padding: 8px 3rem;
    border: 1px solid $fbn-blue;
     color: $fbn-blue;
     font-weight: 500;

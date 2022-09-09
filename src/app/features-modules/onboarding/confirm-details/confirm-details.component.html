@@ -81,7 +81,25 @@
 
         <div class="flex w-[50%] justify-end my-3">
             <button class="fbn-blue-btn mx-3">Cancel</button>
-            <button class="fbn-fill-blue-btn">Confirm</button>
+            <button (click)="toggleSuccessModal()" class="fbn-fill-blue-btn">Confirm</button>
         </div>
     </div>
 </div>
+
+<app-centered-modal-wrapper *ngIf="isSuccessModalOpen">
+    <div class="modal bg-white w-[50%] px-4">
+        <div class="flex-colend my-2">
+            <div class="my-2">
+                <h1 class="text-fbn-blue font-semibold text-lg">Success!</h1>
+            </div>
+            <div class="my-2">
+                <p class=" text-fbn-text">
+                    New s created  successfully 
+                </p>
+            </div>
+            <div class="my-2">
+                <button (click)="toggleSuccessModal()" class="fbn-px-fill-blue-btn">CLOSE</button>
+            </div>
+        </div>
+    </div>
+</app-centered-modal-wrapper>

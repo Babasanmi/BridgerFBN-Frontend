@@ -13,6 +13,7 @@ export class TableComponent implements OnInit {
   _tableContents: any = [];
   _tableData: any = [];
 
+  deleteModalOpen : boolean = false
 
   edit = faFileEdit as IconProp;
   del = faTrashCan as IconProp;
@@ -39,6 +40,10 @@ export class TableComponent implements OnInit {
   @Input()
   set tableContents(tableContents: []) {
     this._tableContents = tableContents;
+  };
+
+  toggleDeleteModal(){
+    this.deleteModalOpen =!this.deleteModalOpen;
   };
   constructor() { }
 
